@@ -40,7 +40,6 @@ In this section, we try to understand through video demo to play around the proj
 
       <img src="static/images/ss4.png" alt="Movie Recommended Results" />
 
-
 ____
 
 ***Please be slightly patient while I create and upload the demo video. Follow and star this project to get latest notifications and update. :raised_hands:***
@@ -93,7 +92,7 @@ It will take a moment and then show the following output on the terminal.
 
 <img title="" src="./readme_images/runserver_demo.png" alt="">
 
-You can now open your browser and hit the server IP `http://localhost:8000` provided to run the demo on your local system. 
+You can now open your browser and hit the server IP `http://localhost:8000` provided to run the demo on your local system.
 
 By default, this project will run on Demo model. If you wish to change model, you can train and download the model of your choice using the python notebook to get better or faster recommendations. Once trained, you can integrate by modifying these 2 lines of code inside `recommender/views.py`
 
@@ -104,14 +103,13 @@ Line 73: model = pa.parquet.read_table('static/<model_name>.parquet').to_pandas(
 
 Note that you have to place dataset and model into the `static` directory.
 
+This code implements a movie recommendation system based on user input. The system provides a simple web interface built on HTML, CSS, and JavaScript libraries.
 
-This code implements a movie recommendation system based on user input. The system provides a simple web interface built on HTML, CSS, and JavaScript libraries. 
+Inputs: The user can search for movies by providing a partial or complete movie name.
 
-Inputs: The user can search for movies by providing a partial or complete movie name. 
+Outputs: The system provides movie recommendations based on user input.
 
-Outputs: The system provides movie recommendations based on user input. 
-
-Dependencies: 
+Dependencies:
 
 * `static/recommender/` -- contains the following CSS files: `cursor.css`, `page.css`, and `navbar.css`
 * `static/logo.png` -- the logo of the application
@@ -127,7 +125,7 @@ Dependencies:
 Usage:
 
 1. Open the HTML file in a web browser.
-2. Type the name of a movie in the search bar, and the system will provide the movie recommendation. 
+2. Type the name of a movie in the search bar, and the system will provide the movie recommendation.
 
 Note: Only the top 2.5K movies based on IMBD are present in this system's database.
 
